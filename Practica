@@ -1,18 +1,20 @@
+```sql
 -- Módulo 2 - Unidad 1: Diseño de tablas
 -- SQL Server
 
 -- Tabla de clientes
 CREATE TABLE clientes (
-    id_cliente INT,                  -- INT para identificar al cliente con un número entero.
-    nombre VARCHAR(100),             -- VARCHAR(100) permite hasta 100 caracteres.
-    perfil_bio VARCHAR(MAX),         -- VARCHAR(MAX) permite almacenar texto largo.
-    fecha_registro DATE              -- DATE almacena solo la fecha.
+    id_cliente INT,                  -- Número entero para identificar al cliente.
+    nombre VARCHAR(100),             -- Texto de hasta 100 caracteres.
+    perfil_bio VARCHAR(MAX),         -- Texto largo para biografía o notas.
+    fecha_registro DATE              -- Almacena solamente la fecha.
 );
 
 -- Tabla de productos
 CREATE TABLE productos (
-    id_producto INT,                 -- INT para identificar al producto con un número entero.
-    descripcion VARCHAR(255),        -- VARCHAR(255) permite hasta 255 caracteres.
-    precio DECIMAL(10,2),            -- DECIMAL permite hasta 10 dígitos, con 2 decimales.
-    esta_activo BIT                  -- BIT permite representar activo (1) o inactivo (0).
+    id_producto INT,                 -- Número entero para identificar el producto.
+    descripcion VARCHAR(255),        -- Texto de hasta 255 caracteres.
+    precio DECIMAL(10,2),            -- Precio con hasta 10 dígitos y 2 decimales.
+    esta_activo BIT                  -- 1 = activo y 0 = inactivo.
 );
+```
